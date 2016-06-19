@@ -23,4 +23,9 @@
 #include <asm/arch/config.h>
 #endif
 
+/* Original code assumed 4 CPUs */
+#ifndef CONFIG_ARMV7_PSCI_NR_CPUS
+#define CONFIG_ARMV7_PSCI_NR_CPUS 4
+#endif
+
 #endif
